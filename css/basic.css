@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{
+	 font-family: 'Noto Sans KR', sans-serif;  
+	margin: 0;
+	padding: 0;
+
+}
+html,body {
+	height: 100%;
+	min-width: 1110px;
+
+}
+ul {
+	list-style-type: none;
+}
+.btn {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	vertical-align: middle;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 17px;
+	font-size: 15px;
+	color: #fff;	
+}
+a.btn:hover {
+	text-decoration: none;
+}
+.btn_gray {
+	background-color: #aaa;
+}
+.btn_gray:hover {
+	background-color: #999;
+}
+.btn_red {
+	background-color: #d50c0c;
+}
+.btn_red:hover {
+	background-color: #b20202;
+}
+.clear:after {
+	display: block;
+	clear: both;
+	content: "";
+}
+footer {
+	background: rgba(0,0,0,0.8);
+	color: #999;
+
+	padding: 100px 0;
+}
+
+.footer_div {
+	width: 1110px;
+	margin: 0 auto;
+}
+.footer_div li{
+	float: left;
+	width: 330px;
+	padding-left: 40px;
+	position: relative;
+	box-sizing: border-box;
+	border-right: 1px solid ;
+}
+.span_r {
+	background-color: #ff6800;
+	border-radius: 50px;
+	display: inline-block;
+	margin-right: 10px;
+	width: 60px;
+	height:60px;
+}
+.span_r img{
+	position: absolute;
+	width: 40px;
+	top: 13px;
+	left: 50px;
+}
+.footer_div li span{
+	display: inline-block;
+}
+.footer_div li span b{
+	display: block;
+}
+.footer_div li span:last-child{
+	font-size: 22px;
+}
+.footer_div li:last-child {
+ border: 0;
+}

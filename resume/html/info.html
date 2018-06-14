@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>이유진 이력서 - 기본정보</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/info.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+	<script>
+		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+					$('#thumbnail').attr('src', e.target.result);
+				}
+				reader.readAsDataURL(input.files[0]);
+			}
+		}
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<nav>
+				<div class="top_nav">
+					<ul class="clear">
+						<li><a href="../../index.html">메인</a></li>
+						<li class="on"><a href="index.html">이력서</a></li>
+						<li><a href="../../mp/html/mp_main.html">미니프로젝트</a></li>
+					</ul>
+				</div>
+				<div class="re_nav">
+					<ul class="clear">
+						<li><a href="index.html">
+							<img src="../img/resume.png" width="40px">
+						이력서메인</a></li>
+						<li class="on"><a href="info.html">기본정보</a></li>
+						<li><a href="education.html">학력 및 경력사항</a></li>
+						<li><a href="hobby.html">취미</a></li>
+						<li><a href="certificate.html">자격증</a></li>
+						<li class="other_menu"><a href="../../mp/html/naver_login.html" target="_blank">로그인</a></li>
+						<li class="other_menu"><a href="../../mp/html/my_join_form.html">회원가입</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="main_section">
+			<div class="top_content sub_title">
+				<div class="top_word ">
+					<p>기본정보</p>
+				</div>
+			</div>
+			<div class="content_wrap">
+				<table class="resume_table">
+					<tr>
+						<td rowspan="6" style="width: 300px;">
+							<img src="../img/people2.png" id="thumbnail"><br>
+							<input type="file" id="imgInp" onchange="readURL(this);">
+						</td>
+					</tr>
+					<tr>
+						<th class="th_title">이름</th>
+						<td>이유진</td>
+					</tr>
+					<tr>
+						<th class="th_title">생년월일</th>
+						<td><input class="birth" type="datetime-local" value="1990-09-14T00:00">(29세) </td>
+					</tr>
+					<tr>
+						<th class="th_title">휴대폰</th>
+						<td>010 - 0000 - 0000</td>
+					</tr>
+					<tr>
+						<th class="th_title">이메일</th>
+						<td>
+							<input type="text" value="you914" readonly>@
+							<select>
+								<option>naver.com</option>
+								<option>직접입력</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th class="th_title">거주지</th>
+						<td>서울특별시 금천구 </td>
+					</tr>
+					<tr>
+						<th colspan="3">&nbsp;</th>
+					</tr>
+					<tr>
+						<th class="th_title" colspan="3">하고 싶은 말(자기소개서)</th>
+					</tr>
+					<tr>
+						<td colspan="3" style="padding:20px;">
+							안녕하세요. <mark>초보개발자</mark> 이유진입니다. <br><br><br>
+							<p><b>What is Lorem Ipsum?</b><br><br>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							<br>
+							<p>
+								<b>Why do we use it?</b><br><br>
+								It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+							</p>
+							<br>
+							<p><b>What is Lorem Ipsum?</b><br><br>
+							Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							<br>
+							<p>
+								<b>Why do we use it?</b><br><br>
+								It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+							</p>
+							<br>
+							<!--https://www.lipsum.com/-->
+						</td>
+					</tr>
+				</table>
+			</div>
+			<a class="go_top" href="#main_section">상단으로 </a>
+		</section>
+	</div>
+	<footer>
+		<div class="footer_div">
+			<ul class="clear">
+				<li>
+					<span class="span_r"><img src="../img/phone.png"></span>
+					<span>
+						<b>Call</b>	010 0000 0000
+				</span>
+				</li>
+				<li>
+					<span class="span_r"><img src="../img/mail.png"></span>
+					<span>
+						<b>Email</b>you914@naver.com</span>
+				</li>
+				<li> copyright &copy; 2018<br>
+				like Aldus PageMaker including versions of Lorem Ipsum.
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

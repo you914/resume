@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background-color: #eee;
+		font-family: "돋움";
+		font-size: 12px;
+		color: #666;
+	}
+	li {
+		list-style-type: none;
+	}
+	.clear {
+		clear: both;
+	}
+	#logo {
+		font-size: 16px;
+		color: #4e2b23;
+		padding-top: 10px;
+		padding-left: 30px;
+		float: left;
+	}
+	#top_menu {
+		padding-top: 10px;
+		padding-right: 10px;
+		float: right;
+	}
+	#header {
+		width: 800px;
+		height: 40px;
+		background-color: #ddd;
+	}
+	#left {
+		width: 150px; 
+		height: 600px; 
+		background-color: #343333;
+		color: #e2e2e2;
+		float: left;
+	}
+	#left h2 {
+		font-weight: normal;
+		padding-top: 20px;
+		padding-left: 30px;
+	}
+	#left ul{
+		font-size: 14px;
+		padding: 10px 10px 5px 25px;
+	}
+	#left li {
+		padding: 3px;
+	}
+	#right {
+		float: left;
+		width: 650px;
+		height: 600px;
+		background-color: #252525;
+	}
+	#main_title {
+		width: 572px; 
+		padding: 10px; 
+		border: solid 5px #444;
+		margin: 24px 0 0 24px;
+		font-size: 18px;
+		color: #fff;
+		font-weight: bold;
+	}
+	#main_img {
+		padding-top: 15px;
+		padding-left: 24px;
+	}
+	#thumnail {
+		padding-top: 30px;
+		padding-left: 70px;
+	}
+	#thumnail img {float: left;}
+	#move_left {
+		margin: 20px 5px 0 40px;
+	}
+	#photos li {
+		float: left;
+		margin-top: 3px;
+		margin-left: 10px;
+	}
+	#move_right {
+		margin-top: 20px;
+		margin-left: 20px;
+	}
+	#photos li {
+		border: 5px solid #3d3d3d;
+	}
+	#photos li:hover {
+		border:5px solid #ffffff;
+	}
+</style>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">PHOTO GALLERY</div>
+		<div id="top_menu">로그인 | 회원가입 | 방명록</div>
+	</div>
+	<div id="left">
+		<h2>포토갤러리</h2>
+		<ul>
+			<li class="submenu">+ 풍경</li>
+			<li class="submenu">+ 일상</li>
+			<li class="submenu">+ 인물</li>
+			<li class="submenu">+ 가족</li>
+		</ul>
+	</div> <!-- end of left -->
+	<div id="right">
+		<div id="main_title">
+			풍경 사진
+		</div>
+		<img src="../img/b-1.jpg" id="main_img">
+		<div id="thumnail">
+			<img src="../img/bt_move_left.gif" id="move_left">
+			<ul id="photos">
+				<li><a href="#"><img src="../img/s-1.jpg"></a></li>
+				<li><a href="#"><img src="../img/s-2.jpg"></a></li>
+				<li><a href="#"><img src="../img/s-3.jpg"></a></li>
+				<li><a href="#"><img src="../img/s-4.jpg"></a></li>
+				<li><a href="#"><img src="../img/s-5.jpg"></a></li>
+			</ul>
+			<img src="../img/bt_move_right.gif" id="move_right">
+		</div>
+	</div>  <!-- end of right -->
+</body>
+</html>

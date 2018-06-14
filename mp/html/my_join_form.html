@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta  charset="utf-8">
+	<title>회원가입 폼</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../../css/basic.css">	
+
+	<style>
+	#all_wrap {
+		background-color: #F5F5F5;
+		padding: 10px;
+	}
+	h1 {
+		text-align: center;
+	}
+	.btn_area{
+		text-align: center;
+		margin-top: 60px;
+	}
+	#content_wrap {
+		width: 690px;
+		margin: 50px auto;
+		background-color: #fff;
+		border: solid 1px #ddd;
+		padding: 10px 25px;
+
+	}
+	.sns_join {
+		border-bottom: 2px dashed #ddd;
+		padding-bottom: 10px;
+	}
+	.join_form_wrap {
+		margin: 30px 0;
+
+	}
+	.join_input {
+		width: 645px; 
+		height: 50px;
+		padding: 0 19px;
+		color: #333333;
+		font-weight: bold;
+		line-height: 48px;
+		border: 1px solid #bbb;
+
+	}
+	.join_input:focus {
+		border-color :#00A2E8;
+	}
+
+	.join_input.email {
+		width: 450px;
+		margin-right: 10px;
+	}
+	.join_input.hp {
+		width: 105px;
+		margin-right: 10px;
+	}	
+	.select {
+		border: 1px solid #bbbbbb;
+		font-size: 12px;
+		outline-style: none;
+		vertical-align: middle;
+		box-sizing: border-box;
+		font-weight: bold;
+		padding: 0 0 0 19px;
+		height: 48px;
+		width: 150px;
+		margin-left: 10px;
+	}
+	h4 {
+		padding: 0;
+	}
+	ul {
+		list-style-type: none;
+		padding: 0;
+	}
+	.sub_li {
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.sub_li .explain {
+		position: absolute;
+		right: 60px;
+		top: 5px;
+	}
+	.explain {
+		color: #999;
+		font-size: 12px;
+	}
+	.join_input.hp+a.btn {
+		margin-left: 30px;
+		padding: 15px 35px;
+	}
+	.btn_area .btn {
+		width: 200px;
+		font-size: 17px;
+		letter-spacing: 2px;
+		padding: 17px 30px;
+	}
+</style>
+</head>
+<body>
+	<div id="all_wrap">
+		<div>
+			<h1>회원가입</h1>
+		</div>
+		<div id="content_wrap">
+			<div class="sns_join">
+				<h4>sns를 통해 간편가입하기</h4>
+				<p class="explain">sns를 통해 간편하게 가입할 수 있습니다.</p>
+				<a href="#" onclick="alert('준비중입니다.')">
+					<img src="../img/sns_icons.PNG">
+				</a>
+			</div>
+			<div class="join_form_wrap">
+				<h4>회원가입 필수 항목</h4>
+				<form id="join_form">
+					<ul>
+						<li class="sub_li">
+							<input type="text" class="join_input" maxlength="16" placeholder="아이디" autofocus required>
+							<p class="explain">3~15자의 영문/숫자를 조합하여 입력</p>
+						</li>
+						<li class="sub_li">
+							<input type="passward" class="join_input" maxlength="16" placeholder="비밀번호" required>
+							<p class="explain">3~15자의 영문/숫자를 조합하여 입력</p>
+						</li>
+						<li class="sub_li">
+							<input type="passward" class="join_input" maxlength="16" placeholder="비밀번호 확인" required>
+						</li>
+						<li class="sub_li">
+							<input type="text" class="join_input" maxlength="30" placeholder="성명" required>
+							<p class="explain">한글 15자, 영문 30자까지 가능합니다. </p>
+						</li>
+						<li class="sub_li">
+							<input type="text" class="join_input email" maxlength="32" placeholder="이메일"> @
+							<select class="select">
+								<option>선택해주세요.	</option>
+								<option>naver.com	</option>
+								<option>nate.com	</option>
+								<option>hanmail.net	</option>
+								<option>gmail.com	</option>
+							</select>
+						</li>
+						<li class="sub_li">
+							<input type="text" class="join_input hp" maxlength="3" placeholder="휴대폰"> - 
+							<input type="text" class="join_input hp" maxlength="4" > -
+							<input type="text" class="join_input hp" maxlength="4" ><a href="#" class="btn btn_gray">인증번호 발송</a>
+						</li>						
+					</ul>
+					<div class="agree_form">
+						<label><input type="checkbox">이용약관에 동의합니다.</label>
+					</div>
+					<div class="btn_area">
+						<a href="../../index.html" class="btn btn_gray">메인으로 돌아가기</a>
+						<a href="javascript:alert('준비중입니다.');" class="btn btn_red">회원가입하기</a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

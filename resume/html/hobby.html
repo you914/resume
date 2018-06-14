@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>이유진 이력서 - 취미</title>
+	<link rel="stylesheet" type="text/css" href="../css/common.css">
+	<link rel="stylesheet" type="text/css" href="../css/hobby.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+		function changeImg(img)
+		{
+			var sort = $("#choose_list").val();
+			$("img.all").css("visibility", "hidden");
+			if(sort == "전체") {
+				$("img.all").css("visibility", "visible");
+			} else if(sort == "유자") {
+				$("img.uja").css("visibility", "visible");
+			} else {
+				$("img.yeol").css("visibility", "visible");
+			}
+
+		}
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<nav>
+				<div class="top_nav">
+					<ul class="clear">
+						<li><a href="../../index.html">메인</a></li>
+						<li class="on"><a href="index.html">이력서</a></li>
+						<li><a href="../../mp/html/mp_main.html">미니프로젝트</a></li>
+					</ul>
+				</div>
+				<div class="re_nav">
+					<ul class="clear">
+						<li><a href="index.html">
+							<img src="../img/resume.png" width="40px">
+						이력서메인</a></li>
+						<li><a href="info.html">기본정보</a></li>
+						<li><a href="education.html">학력 및 경력사항</a></li>
+						<li class="on"><a href="hobby.html">취미</a></li>
+						<li><a href="certificate.html">자격증</a></li>
+						<li class="other_menu"><a href="../../mp/html/naver_login.html" target="_blank">로그인</a></li>
+						<li class="other_menu"><a href="../../mp/html/my_join_form.html">회원가입</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<section id="main_section">
+			<div class="top_content sub_title">
+				<div class="top_word ">
+					<p>취미</p>
+				</div>
+			</div>
+			<div class="content_wrap">
+				<a class="float_img" href="https://www.instagram.com/eugene914/" target="_blank">
+					<img src="../img/instagram_logo.png" alt="인스타그램 바로가기" title="인스타그램 바로가기">
+				</a>
+				<h2 class="sub_tit">유열이 사진찍기</h2>
+				<p class="content_txt">
+					<mark>유열이</mark>는 우리집 고양이 유자와 열매를 부르는 말입니다. <br>
+					저는 유열이 사진을 찍고 <mark>인스타그램</mark>에 공유함으로서 다른 고양이 집사들과도 정보를 주고받고 힐링합니다.<br><br>
+					<span style=" text-decoration: line-through;">아무래도 우리집 고양이는 귀여우니 아래에 사진을 올리겠습니다.</span>
+				</p>
+
+				<span class="explain_span">인스타그램에서 더 많은 사진을 보실 수 있습니다.</span>
+				<details open>
+					<summary id="sum_cats">유열이 사진</summary>
+					<span class="explain_span">아래에 있는 datalist 에서 골라주세요.</span>
+					<p>
+						<input id="choose_list" list="cats" onchange="changeImg(this);">
+						<datalist id="cats">
+							<option value="전체" selected></option>
+							<option value="유자"></option>
+							<option value="열매"></option>
+						</datalist>
+						<div class="imgs_list">
+							<p><img src="../img/all.jpg" class="all" ></p>
+							<p><img src="../img/유자1.jpg" class="all uja"></p>
+							<p><img src="../img/열매1.jpg" class="all yeol"></p>
+						</div>
+					</p>
+				</details>
+				<h2 class="sub_tit">공연 관람</h2>
+				<p class="content_txt">
+					반복적인 일상에서 벗어나 연극이나 뮤지컬, 영화, 방탈출카페 등의 여러 <mark>문화생활</mark>을 통해, <br>
+					더 넓은 시야와 생각을 가질 수 있습니다
+				</p>
+				<details open>
+					<summary> 최근 한 문화생활 </summary>
+					<div class="imgs_list">
+						<p><img src="../img/h1.PNG"></p>
+						<p><img src="../img/h3.PNG"></p>
+						<p><img src="../img/h5.PNG"></p>
+					</div>
+				</details>
+
+				<h2 class="sub_tit">덕질</h2>
+				<p class="content_txt">
+					저는 아이돌 <mark>EXO</mark>를 좋아합니다. 그들은 저게 더 열심히 살아야 할 이유를 제공해줍니다.
+				</p>
+				<span class="explain_span">exo 최근 뮤직비디오를 감상하실 수 있습니다.</span>
+				<details open>
+					<summary> exo 최근 뮤직비디오 감상 </summary>
+					<iframe width="640" height="480" src="https://www.youtube.com/embed/Ib674A1yMtg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</details>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<div class="footer_div">
+			<ul class="clear">
+				<li>
+					<span class="span_r"><img src="../img/phone.png"></span>
+					<span>
+						<b>Call</b>	010 0000 0000
+					</span>
+				</li>
+				<li>
+					<span class="span_r"><img src="../img/mail.png"></span>
+					<span>
+						<b>Email</b>you914@naver.com</span>
+					</li>
+					<li> copyright &copy; 2018<br>
+						like Aldus PageMaker including versions of Lorem Ipsum.
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+
+	</section>
+</body>
+</html>

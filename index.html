@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=yes" >
+	<title>이유진 홈페이지 메인</title>
+
+	<link rel="stylesheet" type="text/css" href="./resume/css/common.css">
+	<style>
+	body, html {
+		min-width: 770px;
+	}
+	body {
+		width: 100%;
+		background-image: url("./resume/img/pink_com.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	#wrap {
+		background: rgba(0,0,0,0.5);
+
+	}
+	#wrap:after,.right_menu:after {
+		clear: both;
+		display: block;
+		content: "";
+	}
+
+	#wrap>div {
+		float: left;
+		width: 50%;
+		margin: 120px 0;
+		text-align: center;
+		min-width: 350px;
+	}
+	#wrap>div a{
+
+		display: block;
+		font-size: 30px;
+		margin: 50px;
+		border: 5px solid #000;
+		padding: 30px 0;
+		background-color: #333;
+		min-width: 290px;
+		transition: .3s;
+	}
+	#wrap>div a:hover {
+		background-color: #F9E1C5;
+		transform: scale(1.1);
+	}
+	#wrap>div a:hover img{
+		
+	}	
+	#wrap>div a img{
+		display: block;
+		width: 200px;
+		margin: 0 auto;
+	}
+	#header {
+		width: 100%;
+		background-color: rgba(252,229,198,0.8);
+		padding: 20px 0;
+	}
+	.right_menu ul li{
+		list-style-type: none;
+		float: right;
+		margin-right: 30px;
+		font-size: 20px;
+
+	}
+	.right_menu ul li a{
+		border-bottom: 2px solid #DBBDA4;
+	}
+	.right_menu ul li:hover a{
+		text-decoration: none;
+		border-bottom: 2px solid #000;
+	}
+	.footer_div li {
+	 width: 33%;
+	}
+	.footer_div {
+		width: auto;
+	}
+	.right_menu ul li.point a{
+		border: 2px solid #ff6800;
+		padding: 5px 10px;
+		background-color: #ff6800;
+		color: #fff;
+	}
+	</style>
+	<script >
+		function go_login() {
+			var id = prompt("아이디를 입력하세요.");
+			if(id == "std01" || id == "std02" ||id == "std03") {
+				var pw = prompt("비밀번호를 입력해주세요.");
+				if(id == "std01") {
+					if(pw == "1111") {
+						 alert("로그인 성공");
+						 location.href="./resume/html/index.html";
+					}else {
+						alert(id+"의 비밀번호가 틀렸습니다.");
+					}
+				}else if(id == "std02") {
+					if(pw == "2222") {
+						 alert("로그인 성공");
+						 location.href="./resume/html/index.html";
+					}else {
+						alert(id+"의 비밀번호가 틀렸습니다.");
+					}				
+				}else {
+					if(pw == "3333") {
+						 alert("로그인 성공");
+						 location.href="./resume/html/index.html";
+					}else {
+						alert(id+"의 비밀번호가 틀렸습니다.");
+					}					
+				}
+			}else {
+				alert("아이디가 틀렸어요.");
+			}
+
+		}
+		function direct_re() {
+			alert("std01 1111/ std02 2222/ std03 3333");
+			go_login();
+		}
+	</script>
+</head>
+<body>
+	<div id="wrap">
+		<header>
+			<div id="header">
+				<div class="right_menu">
+					<ul>
+						<li><a href="./mp/html/my_join_form.html">회원가입</a></li>
+						<li><a href="#" onclick="go_login()">로그인</a></li>
+						<li class="point"><a href="./resume/html/responsive.html">반응형 웹으로 이력서보기!</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="left_content">
+			<a href="#" onclick="direct_re()">
+				<img src="./resume/img/resume.png">
+				이력서
+			</a>
+		</div>
+		<div class="right_content">
+			<a href="./mp/html/mp_main.html">
+				<img src="./resume/img/mp.png">
+				미니프로젝트 + R
+			</a>
+		</div>
+	</div>
+	<footer>
+		<div class="footer_div">
+			<ul class="clear">
+				<li>
+					<span class="span_r"><img src="./resume/img/phone.png"></span>
+					<span>
+						<b>Call</b>	010 0000 0000
+				</span>
+				</li>
+				<li>
+					<span class="span_r"><img src="./resume/img/mail.png"></span>
+					<span>
+						<b>Email</b>you914@naver.com</span>
+				</li>
+				<li> copyright &copy; 2018<br>
+				like Aldus PageMaker including versions of Lorem Ipsum.
+				</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
